@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		890708B521AE504C000A3888 /* PrefrenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890708B421AE504C000A3888 /* PrefrenceViewController.swift */; };
+		890708B721AE5AEC000A3888 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 890708B621AE5AEC000A3888 /* README.md */; };
+		890708BC21AE6499000A3888 /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890708BB21AE6499000A3888 /* EggTimer.swift */; };
 		89A5D0A621AE425C006B9ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5D0A521AE425C006B9ABC /* AppDelegate.swift */; };
 		89A5D0A821AE425C006B9ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5D0A721AE425C006B9ABC /* ViewController.swift */; };
 		89A5D0AA21AE425D006B9ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A5D0A921AE425D006B9ABC /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		890708B421AE504C000A3888 /* PrefrenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefrenceViewController.swift; sourceTree = "<group>"; };
+		890708B621AE5AEC000A3888 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		890708BB21AE6499000A3888 /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
 		89A5D0A221AE425C006B9ABC /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A5D0A521AE425C006B9ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89A5D0A721AE425C006B9ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,11 +40,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890708B821AE6386000A3888 /* ViewContrroller */ = {
+			isa = PBXGroup;
+			children = (
+				89A5D0A721AE425C006B9ABC /* ViewController.swift */,
+				890708B421AE504C000A3888 /* PrefrenceViewController.swift */,
+			);
+			path = ViewContrroller;
+			sourceTree = "<group>";
+		};
+		890708B921AE6398000A3888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				890708BB21AE6499000A3888 /* EggTimer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		890708BA21AE63E6000A3888 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		89A5D09921AE425C006B9ABC = {
 			isa = PBXGroup;
 			children = (
 				89A5D0A421AE425C006B9ABC /* EggTimer */,
 				89A5D0A321AE425C006B9ABC /* Products */,
+				890708BA21AE63E6000A3888 /* Supporting Files */,
+				890708B621AE5AEC000A3888 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +85,13 @@
 		89A5D0A421AE425C006B9ABC /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				89A5D0A521AE425C006B9ABC /* AppDelegate.swift */,
-				89A5D0A721AE425C006B9ABC /* ViewController.swift */,
-				89A5D0A921AE425D006B9ABC /* Assets.xcassets */,
-				89A5D0AB21AE425D006B9ABC /* Main.storyboard */,
-				890708B421AE504C000A3888 /* PrefrenceViewController.swift */,
 				89A5D0AE21AE425D006B9ABC /* Info.plist */,
 				89A5D0AF21AE425D006B9ABC /* EggTimer.entitlements */,
+				89A5D0A521AE425C006B9ABC /* AppDelegate.swift */,
+				890708B921AE6398000A3888 /* Model */,
+				890708B821AE6386000A3888 /* ViewContrroller */,
+				89A5D0A921AE425D006B9ABC /* Assets.xcassets */,
+				89A5D0AB21AE425D006B9ABC /* Main.storyboard */,
 			);
 			path = EggTimer;
 			sourceTree = "<group>";
@@ -124,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890708B721AE5AEC000A3888 /* README.md in Resources */,
 				89A5D0AA21AE425D006B9ABC /* Assets.xcassets in Resources */,
 				89A5D0AD21AE425D006B9ABC /* Main.storyboard in Resources */,
 			);
@@ -137,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				890708B521AE504C000A3888 /* PrefrenceViewController.swift in Sources */,
+				890708BC21AE6499000A3888 /* EggTimer.swift in Sources */,
 				89A5D0A821AE425C006B9ABC /* ViewController.swift in Sources */,
 				89A5D0A621AE425C006B9ABC /* AppDelegate.swift in Sources */,
 			);
