@@ -164,12 +164,31 @@ extension ViewController {
         
         let notificationName = Notification.Name(rawValue: "PrefsChanged")
         NotificationCenter.default.addObserver(forName: notificationName, object: nil, queue: nil) { (notification) in
-            self.updateFromPrefs()
+            self.checkForResetAfterPrefsChange()
         }
     }
     
     func updateFromPrefs() {
         eggTimer.duration = prefs.selectedTime
         resetButtonClicked(self)
+    }
+    
+    func checkForResetAfterPrefsChange() {
+        if eggTimer.isStopped || eggTimer.isPaused {
+            updateFromPrefs()
+        } else {
+            let alert = NSAlert()
+            alert.messageText = "Reset timer with the new settings?"
+            alert.informativeText = "This will stop your current timer!"
+            alert.alertStyle = .warning
+            
+            alert.addButton(withTitle: "Reset")
+            alert.addButton(withTitle: "Cancel")
+            
+            let response = alert.runModal()
+            if response == NSApplication.ModalResponse.alertFirstButtonReturn {
+                self.updateFromPrefs()
+            }
+        }
     }
 }
