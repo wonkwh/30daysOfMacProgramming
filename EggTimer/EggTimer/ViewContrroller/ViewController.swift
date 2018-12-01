@@ -17,11 +17,13 @@ class ViewController: NSViewController {
     @IBOutlet weak var resetButton: NSButton!
     
     var eggTimer = EggTimer()
+    var prefs = Preferences()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         eggTimer.delegate = self
+        setupPrefs()
     }
 
     
@@ -49,7 +51,7 @@ class ViewController: NSViewController {
         if eggTimer.isPaused {
             eggTimer.resumeTimer()
         } else {
-            eggTimer.duration = 360
+            eggTimer.duration = prefs.selectedTime
             eggTimer.startTimer()
         }
         configureButtonsAndMenus()
@@ -62,7 +64,7 @@ class ViewController: NSViewController {
     
     @IBAction func resetButtonClicked(_ sender: Any) {
         eggTimer.resetTimer()
-        updateDisplay(for: 360)
+        updateDisplay(for: prefs.selectedTime)
         configureButtonsAndMenus()
     }
 }
@@ -155,3 +157,19 @@ extension ViewController {
 
 }
 
+extension ViewController {
+    // MARK: - preferences
+    func setupPrefs() {
+        updateDisplay(for: prefs.selectedTime)
+        
+        let notificationName = Notification.Name(rawValue: "PrefsChanged")
+        NotificationCenter.default.addObserver(forName: notificationName, object: nil, queue: nil) { (notification) in
+            self.updateFromPrefs()
+        }
+    }
+    
+    func updateFromPrefs() {
+        eggTimer.duration = prefs.selectedTime
+        resetButtonClicked(self)
+    }
+}

@@ -263,9 +263,9 @@ DQ
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5V-ts-TkL">
-                                <rect key="frame" x="162" y="123" width="38" height="17"/>
+                                <rect key="frame" x="162" y="123" width="64" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="6 min" id="nPN-0u-t7H">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="6 minutes" id="nPN-0u-t7H">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

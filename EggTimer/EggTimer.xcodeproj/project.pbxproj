@@ -10,6 +10,7 @@
 		890708B521AE504C000A3888 /* PrefrenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890708B421AE504C000A3888 /* PrefrenceViewController.swift */; };
 		890708B721AE5AEC000A3888 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 890708B621AE5AEC000A3888 /* README.md */; };
 		890708BC21AE6499000A3888 /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890708BB21AE6499000A3888 /* EggTimer.swift */; };
+		890708BE21AE74CC000A3888 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890708BD21AE74CC000A3888 /* Preferences.swift */; };
 		89A5D0A621AE425C006B9ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5D0A521AE425C006B9ABC /* AppDelegate.swift */; };
 		89A5D0A821AE425C006B9ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5D0A721AE425C006B9ABC /* ViewController.swift */; };
 		89A5D0AA21AE425D006B9ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A5D0A921AE425D006B9ABC /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		890708B421AE504C000A3888 /* PrefrenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefrenceViewController.swift; sourceTree = "<group>"; };
 		890708B621AE5AEC000A3888 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		890708BB21AE6499000A3888 /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
+		890708BD21AE74CC000A3888 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		89A5D0A221AE425C006B9ABC /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A5D0A521AE425C006B9ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89A5D0A721AE425C006B9ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				890708BB21AE6499000A3888 /* EggTimer.swift */,
+				890708BD21AE74CC000A3888 /* Preferences.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				890708B521AE504C000A3888 /* PrefrenceViewController.swift in Sources */,
 				890708BC21AE6499000A3888 /* EggTimer.swift in Sources */,
+				890708BE21AE74CC000A3888 /* Preferences.swift in Sources */,
 				89A5D0A821AE425C006B9ABC /* ViewController.swift in Sources */,
 				89A5D0A621AE425C006B9ABC /* AppDelegate.swift in Sources */,
 			);
