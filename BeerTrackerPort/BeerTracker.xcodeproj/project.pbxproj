@@ -17,6 +17,15 @@
 		17448E221CB11FDC00EC277B /* BeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17448E111CB11FDC00EC277B /* BeersTableViewController.swift */; };
 		17448E251CB11FDC00EC277B /* STRatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17448E151CB11FDC00EC277B /* STRatingControl.swift */; };
 		17DDE69A1CCBA10C002CF776 /* BeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DDE6991CCBA10C002CF776 /* BeerManager.swift */; };
+		899BFBE421DC8C4100B98CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BFBE321DC8C4100B98CB8 /* AppDelegate.swift */; };
+		899BFBE621DC8C4100B98CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BFBE521DC8C4100B98CB8 /* ViewController.swift */; };
+		899BFBE821DC8C4200B98CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899BFBE721DC8C4200B98CB8 /* Assets.xcassets */; };
+		899BFBEB21DC8C4200B98CB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899BFBE921DC8C4200B98CB8 /* Main.storyboard */; };
+		899BFBF121DC8C7100B98CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17448E041CB11FDC00EC277B /* Assets.xcassets */; };
+		899BFBF221DC8CD300B98CB8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 899BFBEC21DC8C4200B98CB8 /* Info.plist */; };
+		899BFBF421DC8D1200B98CB8 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17448E0A1CB11FDC00EC277B /* Beer.swift */; };
+		899BFBF621DC8F8900B98CB8 /* Beer_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BFBF521DC8F8900B98CB8 /* Beer_iOS.swift */; };
+		899BFBF821DC922E00B98CB8 /* Beer_Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BFBF721DC922E00B98CB8 /* Beer_Mac.swift */; };
 		A156B0AB1ECD002500227889 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A156B0AA1ECD002500227889 /* SharedAssets.xcassets */; };
 		A156B0C51ECD12D300227889 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A156B0C41ECD12D300227889 /* Settings.bundle */; };
 /* End PBXBuildFile section */
@@ -34,12 +43,28 @@
 		17448E141CB11FDC00EC277B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17448E151CB11FDC00EC277B /* STRatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRatingControl.swift; sourceTree = "<group>"; };
 		17DDE6991CCBA10C002CF776 /* BeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BeerManager.swift; sourceTree = "<group>"; tabWidth = 2; };
+		899BFBE121DC8C4100B98CB8 /* BeerTracker-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeerTracker-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		899BFBE321DC8C4100B98CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		899BFBE521DC8C4100B98CB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		899BFBE721DC8C4200B98CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		899BFBEA21DC8C4200B98CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		899BFBEC21DC8C4200B98CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		899BFBED21DC8C4200B98CB8 /* BeerTracker_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeerTracker_Mac.entitlements; sourceTree = "<group>"; };
+		899BFBF521DC8F8900B98CB8 /* Beer_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_iOS.swift; sourceTree = "<group>"; };
+		899BFBF721DC922E00B98CB8 /* Beer_Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_Mac.swift; sourceTree = "<group>"; };
 		A156B0AA1ECD002500227889 /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		A156B0C41ECD12D300227889 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17448DCD1CAEF0EE00EC277B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899BFBDE21DC8C4100B98CB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +80,7 @@
 				A156B0A91ECD000F00227889 /* Utilities */,
 				17448E261CB11FE600EC277B /* Model */,
 				17448E021CB11FDC00EC277B /* BeerTracker */,
+				899BFBE221DC8C4100B98CB8 /* BeerTracker-Mac */,
 				17448DD11CAEF0EE00EC277B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				17448DD01CAEF0EE00EC277B /* BeerTracker.app */,
+				899BFBE121DC8C4100B98CB8 /* BeerTracker-Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +112,8 @@
 			children = (
 				17448E0A1CB11FDC00EC277B /* Beer.swift */,
 				17DDE6991CCBA10C002CF776 /* BeerManager.swift */,
+				899BFBF521DC8F8900B98CB8 /* Beer_iOS.swift */,
+				899BFBF721DC922E00B98CB8 /* Beer_Mac.swift */,
 			);
 			name = Model;
 			path = BeerTracker;
@@ -118,6 +147,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		899BFBE221DC8C4100B98CB8 /* BeerTracker-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				899BFBE321DC8C4100B98CB8 /* AppDelegate.swift */,
+				899BFBE521DC8C4100B98CB8 /* ViewController.swift */,
+				899BFBE721DC8C4200B98CB8 /* Assets.xcassets */,
+				899BFBE921DC8C4200B98CB8 /* Main.storyboard */,
+				899BFBEC21DC8C4200B98CB8 /* Info.plist */,
+				899BFBED21DC8C4200B98CB8 /* BeerTracker_Mac.entitlements */,
+			);
+			path = "BeerTracker-Mac";
+			sourceTree = "<group>";
+		};
 		A156B0A91ECD000F00227889 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,19 +188,40 @@
 			productReference = 17448DD01CAEF0EE00EC277B /* BeerTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		899BFBE021DC8C4100B98CB8 /* BeerTracker-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899BFBEE21DC8C4200B98CB8 /* Build configuration list for PBXNativeTarget "BeerTracker-Mac" */;
+			buildPhases = (
+				899BFBDD21DC8C4100B98CB8 /* Sources */,
+				899BFBDE21DC8C4100B98CB8 /* Frameworks */,
+				899BFBDF21DC8C4100B98CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BeerTracker-Mac";
+			productName = "BeerTracker-Mac";
+			productReference = 899BFBE121DC8C4100B98CB8 /* BeerTracker-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		17448DC81CAEF0EE00EC277B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ray Wenderlich";
 				TargetAttributes = {
 					17448DCF1CAEF0EE00EC277B = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					899BFBE021DC8C4100B98CB8 = {
+						CreatedOnToolsVersion = 10.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -177,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				17448DCF1CAEF0EE00EC277B /* BeerTracker */,
+				899BFBE021DC8C4100B98CB8 /* BeerTracker-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +258,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		899BFBDF21DC8C4100B98CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899BFBF221DC8CD300B98CB8 /* Info.plist in Resources */,
+				899BFBE821DC8C4200B98CB8 /* Assets.xcassets in Resources */,
+				899BFBF121DC8C7100B98CB8 /* Assets.xcassets in Resources */,
+				899BFBEB21DC8C4200B98CB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -202,12 +277,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				17448E1D1CB11FDC00EC277B /* BeerDetailViewController.swift in Sources */,
+				899BFBF621DC8F8900B98CB8 /* Beer_iOS.swift in Sources */,
 				17448E221CB11FDC00EC277B /* BeersTableViewController.swift in Sources */,
 				17448E161CB11FDC00EC277B /* AppDelegate.swift in Sources */,
 				17448E1B1CB11FDC00EC277B /* Beer.swift in Sources */,
 				17448E251CB11FDC00EC277B /* STRatingControl.swift in Sources */,
 				17448E1C1CB11FDC00EC277B /* BeerCell.swift in Sources */,
 				17DDE69A1CCBA10C002CF776 /* BeerManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899BFBDD21DC8C4100B98CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899BFBE621DC8C4100B98CB8 /* ViewController.swift in Sources */,
+				899BFBF421DC8D1200B98CB8 /* Beer.swift in Sources */,
+				899BFBE421DC8C4100B98CB8 /* AppDelegate.swift in Sources */,
+				899BFBF821DC922E00B98CB8 /* Beer_Mac.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +313,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				17448E081CB11FDC00EC277B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		899BFBE921DC8C4200B98CB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				899BFBEA21DC8C4200B98CB8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -371,6 +466,58 @@
 			};
 			name = Release;
 		};
+		899BFBEF21DC8C4200B98CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "BeerTracker-Mac/BeerTracker_Mac.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "BeerTracker-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wonkwh.BeerTracker-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		899BFBF021DC8C4200B98CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "BeerTracker-Mac/BeerTracker_Mac.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "BeerTracker-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wonkwh.BeerTracker-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -388,6 +535,15 @@
 			buildConfigurations = (
 				17448DE81CAEF0EF00EC277B /* Debug */,
 				17448DE91CAEF0EF00EC277B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899BFBEE21DC8C4200B98CB8 /* Build configuration list for PBXNativeTarget "BeerTracker-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899BFBEF21DC8C4200B98CB8 /* Debug */,
+				899BFBF021DC8C4200B98CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
