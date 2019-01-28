@@ -24,13 +24,10 @@ class ViewController: NSViewController {
     }
 
     @IBAction func showWordCountWindow(_ sender: AnyObject) {
-        
-        // 1
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         let wordCountWindowController = storyboard.instantiateController(withIdentifier: "WordCountWindowController") as! NSWindowController
         
         if let wordCountWindow = wordCountWindowController.window, let textStorage = text.textStorage {
-            
             let wordCountViewController = wordCountWindow.contentViewController as! WordCountViewController
             wordCountViewController.wordCount = textStorage.words.count
             wordCountViewController.paragraphCount = textStorage.paragraphs.count
