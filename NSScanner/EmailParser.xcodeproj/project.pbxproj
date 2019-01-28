@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89D5C54D21FEEE6800AFEC37 /* Scanner+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5C54C21FEEE6800AFEC37 /* Scanner+.swift */; };
+		89D5C54F21FEEEBE00AFEC37 /* HardwarePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5C54E21FEEEBE00AFEC37 /* HardwarePost.swift */; };
+		89D5C55121FEEEF000AFEC37 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5C55021FEEEF000AFEC37 /* Parser.swift */; };
+		C246A3A41C9B6916002BD419 /* comp.sys.mac.hardware in Resources */ = {isa = PBXBuildFile; fileRef = C246A3A31C9B6916002BD419 /* comp.sys.mac.hardware */; };
+		C2E7B3CD1C9C69A20045D269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E7B3C81C9C69A20045D269 /* Assets.xcassets */; };
+		C2E7B3CE1C9C69A20045D269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7B3C91C9C69A20045D269 /* AppDelegate.swift */; };
+		C2E7B3CF1C9C69A20045D269 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7B3CA1C9C69A20045D269 /* DataSource.swift */; };
+		C2E7B3D11C9C69A20045D269 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7B3CC1C9C69A20045D269 /* PostCell.swift */; };
+		C2E7B3D51C9C6A5A0045D269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E7B3D31C9C6A5A0045D269 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89D5C54C21FEEE6800AFEC37 /* Scanner+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Scanner+.swift"; path = "EmailParser/Scanner+.swift"; sourceTree = SOURCE_ROOT; };
+		89D5C54E21FEEEBE00AFEC37 /* HardwarePost.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = HardwarePost.swift; path = EmailParser/HardwarePost.swift; sourceTree = SOURCE_ROOT; tabWidth = 4; };
+		89D5C55021FEEEF000AFEC37 /* Parser.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = EmailParser/Parser.swift; sourceTree = SOURCE_ROOT; tabWidth = 4; };
+		C246A3A31C9B6916002BD419 /* comp.sys.mac.hardware */ = {isa = PBXFileReference; lastKnownFileType = folder; path = comp.sys.mac.hardware; sourceTree = "<group>"; };
+		C2B762061C9B43F300ADF0A9 /* EmailParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E7B3C81C9C69A20045D269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = EmailParser/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C2E7B3C91C9C69A20045D269 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = EmailParser/AppDelegate.swift; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		C2E7B3CA1C9C69A20045D269 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = EmailParser/DataSource.swift; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		C2E7B3CB1C9C69A20045D269 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EmailParser/Info.plist; sourceTree = SOURCE_ROOT; };
+		C2E7B3CC1C9C69A20045D269 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = EmailParser/PostCell.swift; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		C2E7B3D41C9C6A5A0045D269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EmailParser/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2B762031C9B43F300ADF0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2B761FD1C9B43F200ADF0A9 = {
+			isa = PBXGroup;
+			children = (
+				C246A3A31C9B6916002BD419 /* comp.sys.mac.hardware */,
+				C2B762081C9B43F300ADF0A9 /* EmailParser */,
+				C2B762071C9B43F300ADF0A9 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		C2B762071C9B43F300ADF0A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B762061C9B43F300ADF0A9 /* EmailParser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B762081C9B43F300ADF0A9 /* EmailParser */ = {
+			isa = PBXGroup;
+			children = (
+				C2E7B3C91C9C69A20045D269 /* AppDelegate.swift */,
+				C2E7B3CC1C9C69A20045D269 /* PostCell.swift */,
+				C2E7B3CA1C9C69A20045D269 /* DataSource.swift */,
+				C2E7B3D21C9C6A340045D269 /* Support */,
+				89D5C54C21FEEE6800AFEC37 /* Scanner+.swift */,
+				89D5C54E21FEEEBE00AFEC37 /* HardwarePost.swift */,
+				89D5C55021FEEEF000AFEC37 /* Parser.swift */,
+			);
+			name = EmailParser;
+			path = NSScannerTutorial;
+			sourceTree = "<group>";
+		};
+		C2E7B3D21C9C6A340045D269 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C2E7B3CB1C9C69A20045D269 /* Info.plist */,
+				C2E7B3D31C9C6A5A0045D269 /* Main.storyboard */,
+				C2E7B3C81C9C69A20045D269 /* Assets.xcassets */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2B762051C9B43F300ADF0A9 /* EmailParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B762151C9B43F300ADF0A9 /* Build configuration list for PBXNativeTarget "EmailParser" */;
+			buildPhases = (
+				C2B762021C9B43F300ADF0A9 /* Sources */,
+				C2B762031C9B43F300ADF0A9 /* Frameworks */,
+				C2B762041C9B43F300ADF0A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmailParser;
+			productName = NSScannerTutorial;
+			productReference = C2B762061C9B43F300ADF0A9 /* EmailParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2B761FE1C9B43F200ADF0A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Hai Nguyen";
+				TargetAttributes = {
+					C2B762051C9B43F300ADF0A9 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = C2B762011C9B43F200ADF0A9 /* Build configuration list for PBXProject "EmailParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2B761FD1C9B43F200ADF0A9;
+			productRefGroup = C2B762071C9B43F300ADF0A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2B762051C9B43F300ADF0A9 /* EmailParser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2B762041C9B43F300ADF0A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E7B3D51C9C6A5A0045D269 /* Main.storyboard in Resources */,
+				C2E7B3CD1C9C69A20045D269 /* Assets.xcassets in Resources */,
+				C246A3A41C9B6916002BD419 /* comp.sys.mac.hardware in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2B762021C9B43F300ADF0A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E7B3CF1C9C69A20045D269 /* DataSource.swift in Sources */,
+				89D5C54F21FEEEBE00AFEC37 /* HardwarePost.swift in Sources */,
+				89D5C55121FEEEF000AFEC37 /* Parser.swift in Sources */,
+				C2E7B3CE1C9C69A20045D269 /* AppDelegate.swift in Sources */,
+				89D5C54D21FEEE6800AFEC37 /* Scanner+.swift in Sources */,
+				C2E7B3D11C9C69A20045D269 /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2E7B3D31C9C6A5A0045D269 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2E7B3D41C9C6A5A0045D269 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2B762131C9B43F300ADF0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2B762141C9B43F300ADF0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		C2B762161C9B43F300ADF0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EmailParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HaiNguyen.EmailParser;
+				PRODUCT_NAME = EmailParser;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C2B762171C9B43F300ADF0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EmailParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HaiNguyen.EmailParser;
+				PRODUCT_NAME = EmailParser;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2B762011C9B43F200ADF0A9 /* Build configuration list for PBXProject "EmailParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B762131C9B43F300ADF0A9 /* Debug */,
+				C2B762141C9B43F300ADF0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B762151C9B43F300ADF0A9 /* Build configuration list for PBXNativeTarget "EmailParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B762161C9B43F300ADF0A9 /* Debug */,
+				C2B762171C9B43F300ADF0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2B761FE1C9B43F200ADF0A9 /* Project object */;
+}
