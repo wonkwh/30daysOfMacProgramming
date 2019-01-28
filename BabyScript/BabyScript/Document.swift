@@ -16,9 +16,10 @@ class Document: NSDocument {
     }
 
     override class var autosavesInPlace: Bool {
-        return true
+        return false
     }
 
+    
     override func makeWindowControllers() {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
@@ -39,6 +40,12 @@ class Document: NSDocument {
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
 
+    override func save(withDelegate delegate: Any?, didSave didSaveSelector: Selector?, contextInfo: UnsafeMutableRawPointer?) {
+        let userInfo = [NSLocalizedDescriptionKey: "Sorry, no saving implemented in this tutorial. Click \"Don't Save\" to quit."]
+        let error =  NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: userInfo)
+        let alert = NSAlert(error: error)
+        alert.runModal()
+    }
 
 }
 
