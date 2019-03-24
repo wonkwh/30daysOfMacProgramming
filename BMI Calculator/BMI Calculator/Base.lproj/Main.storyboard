@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -718,7 +719,7 @@
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="BMI Calculator" id="ei3-EG-4TJ">
                                     <font key="font" metaFont="systemLight" size="19"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="TitleColor"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -770,7 +771,7 @@
                                     <constraint firstAttribute="width" constant="32" id="ErC-2B-7tF"/>
                                     <constraint firstAttribute="height" constant="32" id="K6u-3h-GB2"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="cFQ-jq-cpt"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="scale" id="cFQ-jq-cpt"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNK-ek-3OZ">
                                 <rect key="frame" x="38" y="143" width="32" height="32"/>
@@ -778,7 +779,7 @@
                                     <constraint firstAttribute="width" constant="32" id="Y97-hO-kgM"/>
                                     <constraint firstAttribute="height" constant="32" id="aS6-22-yHH"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="zyM-Yc-kWo"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="height" id="zyM-Yc-kWo"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nkK-KD-SpV">
                                 <rect key="frame" x="263" y="148" width="67" height="22"/>
@@ -844,4 +845,11 @@
             <point key="canvasLocation" x="75" y="730"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="height" width="32" height="32"/>
+        <image name="scale" width="32" height="32"/>
+        <namedColor name="TitleColor">
+            <color red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
