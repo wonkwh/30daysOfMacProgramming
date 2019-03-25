@@ -10,6 +10,7 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    var preferencesWindowController: NSWindowController?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if UserDefaults.standard.value(forKey: "measurementSystem") == nil {
@@ -21,6 +22,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    @IBAction func showPrefrences(_ sender: Any) {
+        if preferencesWindowController == nil {
+            let storyboard = NSStoryboard(name: "Preferences", bundle: nil)
+            if let windowController = storyboard.instantiateInitialController() as? NSWindowController {
+                preferencesWindowController = windowController
+            }
+        }
+        
+        if let windowController = preferencesWindowController {
+            windowController.showWindow(nil)
+        }
+    }
 
 }
 

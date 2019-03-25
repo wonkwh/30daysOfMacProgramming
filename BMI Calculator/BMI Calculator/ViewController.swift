@@ -30,7 +30,10 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleDidChangeMeasurementSystem(notification:)),
+                                               name: NSNotification.Name(rawValue: "didChangeMeasurementSystem"),
+                                               object: nil)
     }
 
     override func viewWillAppear() {
@@ -148,6 +151,26 @@ class ViewController: NSViewController {
         if let window = view.window {
             window.makeFirstResponder(window)
         }
+    }
+    
+    @objc func handleDidChangeMeasurementSystem(notification: Notification) {
+        if let system = notification.object as? String {
+            validateTextfields()
+            
+            if system == "metric" {
+                measurementSystem = .metric
+                whData.calculateForMetricSystem()
+            } else {
+                measurementSystem = .imperial
+                whData.calculateForImperialSystem()
+            }
+            
+            updateTextfields()
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }
 

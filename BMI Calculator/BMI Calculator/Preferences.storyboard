@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="JFV-FD-tKP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -9,11 +9,13 @@
         <scene sceneID="5pN-LG-J5a">
             <objects>
                 <windowController id="JFV-FD-tKP" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="UP4-qO-qBx">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="UP4-qO-qBx">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="contentRect" x="245" y="301" width="250" height="200"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="250" height="200"/>
+                        <value key="maxSize" type="size" width="250" height="200"/>
                         <connections>
                             <outlet property="delegate" destination="JFV-FD-tKP" id="VBh-gA-vbU"/>
                         </connections>
@@ -26,14 +28,66 @@
             </objects>
             <point key="canvasLocation" x="116" y="-32"/>
         </scene>
-        <!--View Controller-->
+        <!--Preferences-->
         <scene sceneID="vI9-4Y-luE">
             <objects>
-                <viewController id="2mq-QZ-mwr" sceneMemberID="viewController">
+                <viewController title="Preferences" id="2mq-QZ-mwr" customClass="PreferencesViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="b06-Qj-Blc">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box title="Measurement System" translatesAutoresizingMaskIntoConstraints="NO" id="OBd-kO-Snk">
+                                <rect key="frame" x="5" y="16" width="240" height="164"/>
+                                <view key="contentView" id="62T-av-E8G">
+                                    <rect key="frame" x="3" y="3" width="234" height="146"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ocx-Rc-gD8">
+                                            <rect key="frame" x="7" y="84" width="221" height="18"/>
+                                            <buttonCell key="cell" type="radio" title="Metric(Kg, cm)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="EIq-oU-6q1">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="changeMeasurementSystem:" target="2mq-QZ-mwr" id="jrt-rj-izb"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ett-fE-rsu">
+                                            <rect key="frame" x="7" y="44" width="221" height="18"/>
+                                            <buttonCell key="cell" type="radio" title="Imperial(Pounds, Feet-Inches)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="uo6-D9-OoL">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="changeMeasurementSystem:" target="2mq-QZ-mwr" id="pNS-vE-Ini"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ocx-Rc-gD8" firstAttribute="leading" secondItem="62T-av-E8G" secondAttribute="leading" constant="8" id="0tF-SI-L8l"/>
+                                        <constraint firstItem="ett-fE-rsu" firstAttribute="top" secondItem="ocx-Rc-gD8" secondAttribute="bottom" constant="24" id="EBJ-qR-hAA"/>
+                                        <constraint firstAttribute="trailing" secondItem="ett-fE-rsu" secondAttribute="trailing" constant="8" id="JTO-sd-zXs"/>
+                                        <constraint firstAttribute="bottom" secondItem="ett-fE-rsu" secondAttribute="bottom" constant="45" id="Tsz-4q-456"/>
+                                        <constraint firstItem="ocx-Rc-gD8" firstAttribute="top" secondItem="62T-av-E8G" secondAttribute="top" constant="45" id="bNj-Ns-ddd"/>
+                                        <constraint firstItem="ett-fE-rsu" firstAttribute="leading" secondItem="62T-av-E8G" secondAttribute="leading" constant="8" id="hE9-Zz-uT0"/>
+                                        <constraint firstAttribute="trailing" secondItem="ocx-Rc-gD8" secondAttribute="trailing" constant="8" id="vvl-Mn-QTe"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4lR-uT-HJV"/>
+                                </constraints>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OBd-kO-Snk" firstAttribute="leading" secondItem="b06-Qj-Blc" secondAttribute="leading" constant="8" id="27H-yV-3Af"/>
+                            <constraint firstAttribute="trailing" secondItem="OBd-kO-Snk" secondAttribute="trailing" constant="8" id="bBI-a5-pdc"/>
+                            <constraint firstItem="OBd-kO-Snk" firstAttribute="top" secondItem="b06-Qj-Blc" secondAttribute="top" constant="20" id="jeR-84-EyR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imperialRadio" destination="ett-fE-rsu" id="AfS-cn-02l"/>
+                        <outlet property="metricRadio" destination="ocx-Rc-gD8" id="R6e-n0-64A"/>
+                    </connections>
                 </viewController>
                 <customObject id="XBT-Rb-fbZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
