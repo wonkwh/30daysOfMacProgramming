@@ -11,10 +11,10 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        if UserDefaults.standard.value(forKey: "measurementSystem") == nil {
+            UserDefaults.standard.set("metric", forKey: "measurementSystem")
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
